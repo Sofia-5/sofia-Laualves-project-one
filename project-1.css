@@ -439,6 +439,29 @@ button {
 /* Responsive styles - 1st breakpoint  */
 /***************************************/
 
+/* Responsive styles - 1st breakpoint  */
+/***************************************/
+
+@media(max-width: 1024px) {
+
+  h1 {
+    font-size: 6rem;
+    max-width: calc(43% - 0.6rem);
+    margin: 13rem 5rem 0 0;
+    line-height: 7.43rem;
+  }
+
+  .sm-icons-floated {
+      float: right;
+      position: absolute;
+      bottom: 1.9rem;
+      right: 3.4rem;
+  }
+
+  
+
+}
+
 
 /* Responsive styles - Mobile Verticle View */
 /**************************************************************/
