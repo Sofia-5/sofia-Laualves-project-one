@@ -51,9 +51,9 @@ font-family: 'Roboto', sans-serif;
 body {
   font-family: 'Roboto', sans-serif;
   color: white; 
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 300;
-  letter-spacing: 0.02rem;
+  letter-spacing: 0.05rem;
 }
 
 h1,
@@ -66,11 +66,11 @@ button {
 }
 
 h2 {
-  font-size: 4.7rem;
+  font-size: 5.4rem;
 }
 
 h3 { 
-  font-size: 3.7rem;
+  font-size: 4.5rem;
 }
 
 p {
@@ -110,7 +110,7 @@ header {
 
 .header-nav li a {
   display: inline-block;
-  padding: 1.5rem 3.5rem 0 0;
+  padding: 2rem 3.5rem 0 0;
   line-height: 2.9rem;
   color: white;
   margin-top: 0.7rem;
@@ -277,39 +277,34 @@ h1 {
   background-color: #815600;
 }
 
-
 .section-four-top,
 .section-four-bottom {
-  width: 100%;
+  overflow: auto;
+}
+
+.section-four-top div {
+  float: right; 
+}
+
+.section-four-bottom div {
+  float: left; 
 }
 
 .section-four-text1,
 .section-four-text2 {
   width: 50%;
-  height: 100%;
-  padding: 13rem;
 }
 
 .section-four-text1 {
-  float: left;
+  padding: 15rem 15rem 5rem 15rem;
 }
 
 .section-four-text2 {
-  float: right;
+  padding: 13rem 16rem 5rem 12rem;
 }
 
 .image-left,
 .image-right {
-  height: auto;
-}
-
-.image-left {
-  width: 50%;
-  float: left;
-}
-
-.image-right {
-  float: right;
   width: 50%;
 }
 
@@ -353,8 +348,8 @@ h1 {
 .footer-nav a {
   color: white;
   line-height: 2.5rem;
-  font-size: 1.5rem;
-  padding: 2rem 2rem 2rem 0;
+  font-size: 2rem;
+  padding: 3rem 2rem 3rem 0;
 }
 
 .float-left div {
@@ -438,17 +433,137 @@ button {
 
 /* Responsive styles - 1st breakpoint  */
 /***************************************/
+@media(max-width: 1673px) {
+  /* Section 4 Responsive styles */
+  .section-four-text1 {
+    padding: 8rem 16rem 5rem 12rem;
+  }
+}
 
-/* Responsive styles - 1st breakpoint  */
+/* Responsive styles - 2nd breakpoint  */
 /***************************************/
+@media(max-width: 1467px) {
+  /* Header Responsive styles */
+  h1 {
+    font-size: 7rem;
+    max-width: calc(43% - 2rem);
+    margin: 20rem 5rem 0 0;
+    line-height: 8rem;
+  }
+  
+  .sm-icons-floated {
+    float: right;
+    position: absolute;
+    bottom: 1.7rem;
+    right: 3.2rem;
+  }
 
-@media(max-width: 1024px) {
+   /* Section 4 Responsive styles */
+  .section-four-text1 {
+    padding: 7rem 10rem 5rem 10rem;
+  }
+  
+  .section-four-text2 {
+    padding: 7rem 10rem 5rem 10rem;
+  }
 
+  .section-four-text1 h2,
+  .section-four-text2 h2 {
+    margin-bottom: 2rem;
+    font-size: 4.8rem;
+  }
+
+  .section-four-text1 p,
+  .section-four-text2 p {
+    margin-bottom: 3.5rem;
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive styles - 3rd breakpoint  */
+/***************************************/
+@media(max-width: 1278px) {
+  /* Header Responsive styles */
+  h1 {
+    font-size: 6rem;
+    max-width: calc(43% - 0.6rem);
+    margin: 18rem 5rem 0 0;
+    line-height: 7.43rem;
+  }
+  
+  .sm-icons-floated {
+    float: right;
+    position: absolute;
+    bottom: 1.9rem;
+    right: 3.4rem;
+  }
+
+   /* Section 4 Responsive styles */
+  .section-four-text1, 
+  .section-four-text2 {
+    padding: 5rem 8rem 4rem 8rem;
+  }
+
+  .section-four-text1 h2,
+  .section-four-text2 h2 {
+    margin-bottom: 1rem;
+    font-size: 4.4rem;
+  }
+
+  .section-four-text1 p,
+  .section-four-text2 p {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+  }
+}
+
+/* Responsive styles - 4th breakpoint  */
+/***************************************/
+@media(max-width: 1117px) {
+  /* Header Responsive styles */
   h1 {
     font-size: 6rem;
     max-width: calc(43% - 0.6rem);
     margin: 13rem 5rem 0 0;
     line-height: 7.43rem;
+  }
+  
+  .sm-icons-floated {
+    float: right;
+    position: absolute;
+    bottom: 1.9rem;
+    right: 3.4rem;
+  }
+
+/* Section 2 Responsive styles */
+  .gallery-img li:nth-child(2) {
+  margin: 0 2.5rem;
+  }
+
+  .gallery-img img {
+  width: 95%;
+  }
+
+  /* Section 4 Responsive styles */
+  .section-four-text1, 
+  .section-four-text2 {
+    padding: 3rem;
+  }
+
+  .section-four-text1 {
+    margin-left: 0rem;
+  }
+}
+
+/* Responsive styles - 5th breakpoint  */
+/***************************************/
+@media(max-width: 958px) {
+  /* Header Responsive styles */
+  h1 {
+    font-size: 5rem;
+    max-width: calc(43% - 0.4rem);
+    margin: 11rem 5rem 0 0;
+    line-height: 6.9rem;
   }
 
   .sm-icons-floated {
@@ -458,28 +573,199 @@ button {
       right: 3.4rem;
   }
 
-  
+  /* Section 1 Responsive styles */
+  .section-one-wrapper { 
+    width: 80%;
+    padding: 6rem 0 5rem 0;
+  }
 
+  .teal-purse-img {
+    width: 48%;
+    margin-bottom: 3rem;
+  }
+
+  .section-one-text {
+    text-align: center; 
+    width: 48%;
+  }
+
+  .section-one-text h2 {
+    font-size: 4rem;
+  }
+
+  .section-one-text p {
+    text-align: left;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    letter-spacing: 0.04rem;
+  }
+
+  /* Section 2 Responsive styles */
+  .section-two-wrapper { 
+    width: 80%;
+    padding: 3rem 0 5rem 0;
+  }
+
+  .section-two-wrapper h2 {
+    font-size: 4rem;
+    margin-bottom: 3rem;
+  }
+
+  .gallery-img li:nth-child(2) {
+    display: none;
+  }
+
+  .gallery-img li:nth-child(1) {
+    float: right;
+    width: calc(100%/2 - 2rem);
+  }
+
+  .gallery-img li:nth-child(3) {
+    float: left; 
+    width: calc(100%/2 - 2rem);
+  }
+
+  /* Section 3 Responsive styles */
+  .section-three-wrapper { 
+    width: 80%;
+    padding: 4.5rem 0 5rem 0;
+  }
+
+  .icons {
+    width: 100%;
+  }
+
+  .icons div {
+    float: left;
+    width: 31%; 
+    text-align: center;
+  }
+
+  .icons i {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .icons h3 {
+    font-size: 3rem;
+  }
+
+  .icons div:nth-child(2) {
+    margin: 0 1rem 0 2.4rem;
+  }
+
+  /* Section 4 Responsive styles */
+  .section-four-top div,
+  .section-four-bottom div { 
+    float: none;
+  }
+
+  .section-four-text1, 
+  .section-four-text2 {
+    width: 100%;
+    padding: 5rem 3rem 5rem 5rem;
+    text-align: center;
+  }
+
+  .section-four-text1 h2, 
+  .section-four-text2 h2 {
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .section-four-text1 p, 
+  .section-four-text2 p {
+    font-size: 2rem;
+    line-height: 2.9rem;
+    text-align: left;
+  }
+
+  .image-left,
+  .image-right {
+    width: 100%;
+    float: none;
+  }
+
+  .button {
+    text-align:  center;
+  }
+
+
+  /* Footer Responsive styles */
+  .upper-footer-section {
+    padding: 7rem 0;
+  }
+
+  .footer-nav {
+    width: 21%;
+    padding-top: 4rem;
+  }
+
+  .footer-form h2 {
+    font-size: 4.5rem;
+  }
+
+  .footer-form {
+    width: 48%;
+    text-align: center;
+  }
+
+  label {
+    font-size: 1.5rem; 
+  }
+
+  input {
+    width: 100%;
+    height: 4.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    float: none;
+  }
+
+  button {
+    width: 45%;
+    height: 4.2rem;
+    float: none;
+    text-align: center;
+  }
+
+  .contact-info {
+    width: 30%;
+    padding-top: 3rem;
+  }
+
+  .contact-info h3 {
+    font-size: 3.5rem;
+  }
+
+  .contact-info p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .bottom-footer-wrapper a,
+  .bottom-footer-wrapper p:last-child {
+    color: white;
+    font-size: 1.5rem;
+  }
 }
 
-
-/* Responsive styles - Mobile Verticle View */
-/**************************************************************/
-
-@media(max-width: 320px) { 
-
-  /* Header Responsive styles - Mobile Verticle View */
-
+/* Responsive styles - 6th breakpoint  */
+/***************************************/
+@media(max-width: 724px) {
+  
+  /* Header Responsive styles */
+  .social-media-icons {
+    display: none;
+  }
+  
   header nav .clearfix {
     display: none;
   }
 
-  .social-media-icons {
-    display: none;
-  }
-
   .header-wrapper { 
-    width: 90%;
     padding-bottom: 3rem;
   }
 
@@ -493,26 +779,159 @@ button {
 
   .bottom-header h1 {
     float: right;
-    max-width: 85%;
+    max-width: 45%;
     font-size: 3.5rem;
     line-height: 3.7rem;
-    margin: 7rem 0 24rem 0;
+    margin: 7rem 2rem 25rem 0;
     display: block;
   }
 
   .bottom-header img {
     clear: both;
     display: block;
-    width: 100%;
+    width: 80%;
     position: absolute; 
     bottom: 0;
-    left: -3rem;
-    max-width: 95%;
+    left: -6rem;
+    max-width: 85%;
   }
 
   .bottom-header {
-    height: 100%;
     position: relative;
+  }
+
+  /* Section 1 Responsive styles */
+  .section-one-wrapper { 
+    padding: 4rem 0 5rem 0;
+  }
+
+  .teal-purse-img {
+    width: 100%;
+  }
+
+  .section-one-text {
+    float: none;
+    width: 100%;
+  }
+
+  /* Section 2 Responsive styles */
+  .gallery-img li:nth-child(1) {
+    width: calc(100%/2 - 1rem);
+  }
+
+  .gallery-img li:nth-child(3) {
+
+    width: calc(100%/2 - 1rem);
+  }
+
+  /* Section 3 Responsive styles */
+
+  .icons i {
+    font-size: 3rem;
+  }
+
+  .icons h3 {
+    font-size: 2rem;
+  }
+
+  /* Footer Responsive styles */
+  .upper-footer-wrapper {
+    width: 80%;
+  }
+
+  .footer-nav {
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+    margin-left: 14rem;
+  }
+
+  .footer-nav li {
+    float: left;
+  }
+
+  .footer-nav a {
+    text-transform: capitalize;
+    padding: 2rem 0 2rem 0;
+    font-size: 1.6rem;
+  }
+
+  .footer-nav li:nth-child(3),
+  .footer-nav li:nth-child(2),
+  .footer-nav li:nth-child(4) {
+    margin: 0 0 4rem 3.5rem; 
+  }
+
+  .footer-form {
+    width: 100%;
+    text-align: center;
+  }
+
+  .footer-form h2 {
+    font-size: 2.7rem;
+  }
+
+  label {
+    font-size: 1.35rem; 
+  }
+
+  input {
+    width: 80%;
+    height: 4.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    text-align: center;
+    float: none;
+  }
+
+  button {
+    width: 30%;
+    height: 4.2rem;
+    float: none;
+  }
+
+  .contact-info {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info h3 {
+    font-size: 2.7rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info p {
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+  }
+
+  .bottom-footer-section p {
+    font-size: 1.4rem;
+  }
+
+  .bottom-footer-wrapper a,
+  .bottom-footer-wrapper p:last-child {
+    font-size: 1.2rem;
+  }
+}
+
+/* Responsive styles - (7th Breakpoint) Mobile Verticle View */
+/**************************************************************/
+
+@media(max-width: 320px) { 
+
+  /* Header Responsive styles - Mobile Verticle View */
+
+  .bottom-header h1 {
+    max-width: 85%;
+    margin: 7rem 0 24rem 0;
+  }
+
+  .bottom-header img {
+    width: 100%;
+    max-width: 95%;
   }
 
   /* Section 1 Responsive styles - Mobile Verticle View */
@@ -594,18 +1013,16 @@ button {
   }
 
   /* Section 4 Responsive styles - Mobile Verticle View */
-  .section-four-top,
-  .section-four-bottom { 
-    position: relative;
-    max-height: calc(100% - 25rem)
+  .section-four-top div,
+  .section-four-bottom div { 
+    float: none;
   }
 
   .section-four-text1, 
   .section-four-text2 {
-    width: 90%;
-    padding: 28rem 0 3rem 1.5rem;
+    width: 100%;
+    padding: 5rem 1rem 3rem 1.1rem;
     text-align: center;
-    float: none;
   }
 
   .section-four-text1 h2, 
@@ -617,8 +1034,8 @@ button {
 
   .section-four-text1 p, 
   .section-four-text2 p {
-    font-size: 1.4rem;
-    line-height: 2.4rem;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
     text-align: left;
   }
 
@@ -626,9 +1043,10 @@ button {
   .image-right {
     width: 100%;
     float: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+  }
+
+  .button {
+    text-align:  center;
   }
 
   /* Footer Responsive styles - Mobile Verticle View */
@@ -652,12 +1070,13 @@ button {
   .footer-nav a {
     text-transform: capitalize;
     padding: 2rem 0 2rem 0;
+    font-size: 1.6rem;
   }
   
   .footer-nav li:nth-child(3),
   .footer-nav li:nth-child(2),
   .footer-nav li:nth-child(4) {
-    margin: 0 0 4rem 3.8rem; 
+    margin: 0 0 4rem 3.5rem; 
   }
 
   .footer-form {
@@ -670,7 +1089,7 @@ button {
   }
 
   label {
-    font-size: 1.4rem; 
+    font-size: 1.35rem; 
   }
 
   input {
@@ -694,13 +1113,15 @@ button {
     width: 100%;
     margin-bottom: 3rem;
   }
-
+  
   .contact-info h3 {
     font-size: 2.7rem;
+    margin-bottom: 1rem;
   }
-
+  
   .contact-info p {
-  font-size: 1.4rem;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
   }
 
   .bottom-footer-section p {
@@ -711,10 +1132,6 @@ button {
   .bottom-footer-wrapper p:last-child {
     font-size: 1.2rem;
   }
-
-
-
-
 }
 
 
